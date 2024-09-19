@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: .75fr 2fr 1fr;
+    grid-template-rows: .15fr .25fr 2fr;
+}
+
+.top-search {
+    background-color: antiquewhite;
+    grid-column: 2/4;
+}
+
+.left-bar {
+    background-color: red;
+    grid-row: 1/4;
+}
+
+.welcome-bar {
+    background-color: purple;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.projects-container {
+    background-color: green;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.right-container {
+    background-color: orange;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
