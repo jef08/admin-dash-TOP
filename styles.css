@@ -7,34 +7,112 @@ body {
     width: 100%;
     background-color: aqua;
     display: grid;
-    grid-template-columns: .75fr 2fr 1fr;
+    grid-template-columns: .75fr 2fr .75fr;
     grid-template-rows: .15fr .25fr 2fr;
 }
 
+/* TOP SEARCH BAR DIVS */
 .top-search {
     background-color: antiquewhite;
     grid-column: 2/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
+.top-search > .left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.top-search > .right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.top-search input {
+    border-style: none;
+    border-radius: 5px;
+}
+
+/* LEFT BAR DIVS*/
 .left-bar {
     background-color: red;
     grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 500px;
 }
 
+ul {
+ line-height: 2;
+ list-style: none;
+}
+
+/* WELCOME USER DIVS*/
 .welcome-bar {
     background-color: purple;
     grid-column: 2/4;
     grid-row: 2/3;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
+/*PROJECTS DIVS*/
 .projects-container {
     background-color: green;
     grid-column: 2/3;
     grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+   
 }
 
+.project {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}
+
+/*RIGHT CONTAINER DIVS*/
 .right-container {
     background-color: orange;
     grid-column: 3/4;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.featured {
+    height: 175px;
+    width: 200px;
+    background-color: aliceblue;
+}
+
+.announcements {
+    height: 300px;
+    width: 200px;
+    background-color: aliceblue;
+}
+
+.trending {
+    height: 300px;
+    width: 200px;
+    background-color: aliceblue;
 }
